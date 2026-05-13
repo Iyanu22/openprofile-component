@@ -1,0 +1,208 @@
+{
+  "info": {
+    "_postman_id": "814ab4f9-5cf1-4755-a285-2617f8dcdf27",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54105156",
+    "_collection_link": "https://go.postman.co/collection/54105156-814ab4f9-5cf1-4755-a285-2617f8dcdf27?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "PATCH - toggle component",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "11111111-1111-1111-1111-111111111111",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "",
+            "value": "",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n     \"is_enabled\": false\r\n   }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://openprofile-component.onrender.com/v1/profiles/me/components/c0000000-0000-0000-0000-000000000002",
+          "protocol": "https",
+          "host": [
+            "openprofile-component",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "profiles",
+            "me",
+            "components",
+            "c0000000-0000-0000-0000-000000000002"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH - no auth (401)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "11111111-1111-1111-1111-111111111111",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "",
+            "value": "",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n     \"is_enabled\": false\r\n   }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://openprofile-component.onrender.com/v1/profiles/me/components/c0000000-0000-0000-0000-000000000002",
+          "protocol": "https",
+          "host": [
+            "openprofile-component",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "profiles",
+            "me",
+            "components",
+            "c0000000-0000-0000-0000-000000000002"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH - wrong user (403)",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "11111111-1111-1111-1111-111111111111",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "",
+            "value": "",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n     \"is_enabled\": false\r\n   }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://openprofile-component.onrender.com/v1/profiles/me/components/c0000000-0000-0000-0000-000000000002",
+          "protocol": "https",
+          "host": [
+            "openprofile-component",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "profiles",
+            "me",
+            "components",
+            "c0000000-0000-0000-0000-000000000002"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH - reject display_order",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "x-user-id",
+            "value": "11111111-1111-1111-1111-111111111111",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "",
+            "value": "",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n     \"is_enabled\": false\r\n   }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://openprofile-component.onrender.com/v1/profiles/me/components/c0000000-0000-0000-0000-000000000002",
+          "protocol": "https",
+          "host": [
+            "openprofile-component",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "profiles",
+            "me",
+            "components",
+            "c0000000-0000-0000-0000-000000000002"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

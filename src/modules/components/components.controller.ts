@@ -58,7 +58,7 @@ export class ComponentsController {
   @Patch(':componentId')
   async patch(
     @CurrentUser('id') userId: string,
-    @Param('componentId', new ParseUUIDPipe({ version: '4' }))
+    @Param('componentId', new ParseUUIDPipe())
     componentId: string,
     @Body() dto: PatchComponentDto,
   ): Promise<Component> {

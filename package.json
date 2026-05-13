@@ -9,6 +9,7 @@
     "seed": "ts-node src/database/seed.ts",
     "test": "jest --config jest.config.js",
     "test:watch": "jest --watch --config jest.config.js"
+    
   },
   "dependencies": {
     "@nestjs/common": "^10.3.0",
